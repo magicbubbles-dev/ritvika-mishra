@@ -1,0 +1,244 @@
+body {
+    background-color: #ffffff; /* pastel pink */
+    margin: 0;
+}
+
+.container {
+    width: 650px; /* Shared width for navbar and flexbox */
+    margin: auto; /* Center horizontally */
+}
+
+.content {
+    width: 700px; /* Ensure consistent width for content */
+    margin: auto; /* Center horizontally */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    width: 100%; /* Full width of the container */
+}
+
+.navbar_title {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Add space between the GIF and text */
+}
+
+.navbar_title a {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(21, 21, 21);
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar_menu a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(18, 17, 17);
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between menu items */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.navbar_menu a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.navbar-left {
+    font-family: 'Pacifico';
+    font-weight: 400;
+    font-size: 15px; /* Change font size here */
+    color: rgb(21, 21, 21);
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-right nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+}
+
+.navbar-right nav ul li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(18, 17, 17);
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    height: calc(100vh - 50px); /* Full viewport height minus navbar height */
+    width: 100%; /* Full width of the container */
+    margin-top: 10px; /* Add margin from the navbar */
+    gap: 15px; /* Add spacing between items */
+    padding-bottom: 100px; /* Add 100px space at the bottom */
+}
+
+.flexbox nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between items */
+}
+
+.flexbox nav ul li {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    cursor: pointer; /* Pointer cursor for interactivity */
+    text-align: center; /* Center align text */
+}
+
+.flexbox p {
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the text spans the full width */
+    padding-left: 0px; /* Remove padding for better alignment */
+}
+
+.bubbles-png {
+    width: 59px; /* Adjust width for the star icon */
+    height: 59px; /* Adjust height for the star icon */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0; /* Remove auto centering */
+}
+
+.panda-no-gif {
+    width: 330px; /* Fixed width */
+    height: 290px; /* Fixed height */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0; /* Remove auto centering */
+    margin-bottom: 15px; /* Add space below the GIF */
+}
+
+.chicken-gif {
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.text-with-gif {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Add space between the text and the GIF */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the container spans the full width */
+    padding-left: 5px; /* Add padding for spacing */
+}
+
+.title-with-icon {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Add space between the GIF and the title */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.star-gif {
+    width: 50px; /* Adjust width for the star icon */
+    height: 50px; /* Adjust height for the star icon */
+}
+
+.cart-container {
+    display: flex; /* Align items horizontally */
+    justify-content: flex-end; /* Align the GIF to the right */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.section-with-cart {
+    display: flex; /* Align text and cart.gif horizontally */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items:center; /* Align items to the top */
+    gap: 20px; /* Add space between text and GIF */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.section-text {
+    width: 70%; /* Allocate 70% width for text */
+}
+
+.cart-gif {
+    margin-left: auto;
+    width: 210px; /* Fixed width */
+    height: 170px; /* Fixed height */
+    margin-top: 40px;
+    display: block; /* Ensure it behaves as a block element */
+}
+
+.footer {
+    margin-top: 50px; /* Add spacing above the footer */
+    padding-bottom: 100px; /* Add 100px space at the bottom of the page */
+    text-align: center; /* Center align the footer content */
+}
+
+
+.social-icons {
+    display: flex; /* Align icons horizontally */
+    justify-content: center; /* Center align icons */
+    gap: 22px; /* Add space between icons */
+    margin-top: 40px; /* Add spacing above the social icons */
+}
+
+.social-icon {
+    width: 26px; /* Fixed width for icons */
+    height: 26px; /* Fixed height for icons */
+}
+
+.copyright-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    margin-top: 20px;
+    width: auto; /* override width:100% */
+    padding-left: 0; /* remove left padding */
+    padding-bottom: 40px;
+}
+
+.flexbox .copyright-text {
+    text-align: center;
+    width: auto;
+    padding-left: 0;
+} 
+
+.laugh-love-gif {
+    width: 330px; /* Fixed width */
+    height: 290px; /* Fixed height */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0; /* Remove auto centering */
+    margin-bottom: 15px; /* Add space below the GIF */
+}
+
+.work-love-gif {
+    width: 330px; /* Fixed width */
+    height: 290px; /* Fixed height */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0; /* Remove auto centering */
+    margin-top: 30px; /* Add space above the GIF */
+}
+
+/*styles for index file ends here*/
+/*styles for random page ends here*/
+/*styles for work page ends here*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+/* Minimalistic anime page styles */
+.anime-body {
+    background-color: #34020a;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.simple-header {
+    padding: 20px 40px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bubbles-png {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-section a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.anime-main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.anime-main h1 {
+    font-size: 29px;
+    margin-bottom: 40px;
+    
+}
+
+.content-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.anime-lists {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.list-section {
+    margin-bottom: 40px;
+    font-family: ' SF Mono', monospace;
+}
+
+.list-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e6e0e0;
+}
+
+.list-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.gif-container {
+    flex-shrink: 0;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+}
+
+.gif-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gif-section2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px; 
+}
+
+.cowboy-gif {
+    width: 350px;
+    height: 220px;
+}
+.cowboy2-gif {
+    width: 350px;
+    height: 200px;
+}
+.shogo-gif {
+    width: 350px;
+    height: 205px;
+}
+
+@media (max-width: 768px) {
+    .content-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .anime-main {
+        padding: 20px;
+    }
+    
+    .cowboy-gif {
+        width: 150px;
+        height: 150px;
+    }
+}

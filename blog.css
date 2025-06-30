@@ -1,0 +1,208 @@
+/* Simple blog page styles - matching anime.html structure */
+.blog-body {
+    background-color: #040a2a; /* Royal dark blue */
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'SF Mono', monospace;
+}
+
+.simple-header {
+    padding: 30px 60px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 50px;
+}
+
+.bubbles-png {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.3));
+}
+
+.logo-section a {
+    font-size: 22px;
+    color: rgb(255, 247, 247);
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+}
+
+.logo-section a:hover {
+    color: #fa8460;
+    transition: color 0.3s ease;
+}
+
+.blog-main {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blog-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #f1f5f9;
+    font-family: ' SF Mono', monospace;
+}
+
+.content-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.blog-lists {
+    flex: 1;
+}
+
+.list-section {
+    margin-bottom: 40px;
+}
+
+.list-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.list-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.list-section a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.list-section a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-box {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #f1f5f9;
+}
+
+.info-box p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.hi-girl-gif {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-sidebar {
+    position: sticky;
+    top: 60px;
+}
+
+.sidebar-content {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-content h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.sidebar-content h4:not(:first-child) {
+    margin-top: 30px;
+}
+
+.sidebar-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .simple-header {
+        padding: 20px 30px;
+    }
+    
+    .blog-main {
+        padding: 40px 30px;
+    }
+    
+    .blog-main h1 {
+        font-size: 2rem;
+    }
+    
+    .content-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .blog-sidebar {
+        position: static;
+    }
+    
+    .post-item {
+        padding: 20px;
+    }
+    
+    .sidebar-content {
+        padding: 20px;
+    }
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(96, 165, 250, 0.6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(96, 165, 250, 0.8);
+}

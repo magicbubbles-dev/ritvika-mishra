@@ -1,0 +1,79 @@
+
+.random-body {
+    background-color: #ffdab3; /* Pastel base color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px; /* Adjust grid size */
+    font-family: 'Josefin Sans', sans-serif; /* Match font from Google Fonts */
+    color: #333; /* Text color */
+    border-color: #f0f0f0; /* Subtle border */
+    border-width: 3px;
+    border-style: dashed;
+    height: 100vh; /* Full viewport height */
+    margin: 30px;
+    padding: 20px;
+}
+
+.random-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem; /* Large retro font size */
+    color: #4f4537; 
+    margin-top: 30px; /* Space above title */
+}
+
+.magic-link {
+    display: block; /* Ensure it behaves as a block element */
+   
+    font-family: 'Pacifico', cursive;
+    font-size: 2.1rem; /* Slightly larger font size */
+    color: #3838e5; /* Bright pastel blue */
+    margin-bottom: 20px; /* Add spacing below the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.magic-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+/***********************/
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    grid-gap: 20px;
+    max-width: 1200px;
+    align-items: left;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    background: #fdd;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 100px;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.center-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
