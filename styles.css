@@ -4,12 +4,15 @@ body {
 }
 
 .container {
-    width: 650px; /* Shared width for navbar and flexbox */
+    max-width: 650px; /* Maximum width on large screens */
+    width: 90%; /* Take 90% of screen width on smaller screens */
     margin: auto; /* Center horizontally */
+    padding: 0 20px; /* Add some padding on sides */
 }
 
 .content {
-    width: 700px; /* Ensure consistent width for content */
+    max-width: 700px; /* Maximum width on large screens */
+    width: 100%; /* Take full container width */
     margin: auto; /* Center horizontally */
 }
 
@@ -117,11 +120,11 @@ body {
 }
 
 .panda-no-gif {
-    width: 330px; /* Fixed width */
-    height: 290px; /* Fixed height */
+    max-width: 330px; /* Maximum size on large screens */
+    width: 80%; /* Scale down on smaller screens */
+    height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure it behaves as a block element */
-    margin: 0; /* Remove auto centering */
-    margin-bottom: 15px; /* Add space below the GIF */
+    margin: 0 auto 15px auto; /* Center and add space below */
 }
 
 .chicken-gif {
@@ -173,8 +176,9 @@ body {
 
 .cart-gif {
     margin-left: auto;
-    width: 210px; /* Fixed width */
-    height: 170px; /* Fixed height */
+    max-width: 210px; /* Maximum size on large screens */
+    width: 100%; /* Scale with container */
+    height: auto; /* Maintain aspect ratio */
     margin-top: 40px;
     display: block; /* Ensure it behaves as a block element */
 }
@@ -234,6 +238,111 @@ body {
 /*styles for index file ends here*/
 /*styles for random page ends here*/
 /*styles for work page ends here*/
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Take more screen width */
+        padding: 0 15px;
+    }
+    
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .navbar_menu {
+        display: flex;
+        gap: 15px; /* Space between menu items */
+    }
+    
+    .navbar_menu a {
+        margin-left: 0; /* Remove left margin */
+        font-size: 16px; /* Slightly smaller font */
+    }
+    
+    .section-with-cart {
+        flex-direction: column; /* Stack text and cart vertically */
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .section-text {
+        width: 100%; /* Full width for text */
+        text-align: center; /* Center align on mobile */
+    }
+    
+    .cart-gif {
+        margin-left: 0; /* Remove auto margin */
+        margin-top: 20px;
+        max-width: 180px; /* Smaller on tablets */
+    }
+    
+    .panda-no-gif {
+        max-width: 250px; /* Smaller on tablets */
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .navbar_title a {
+        font-size: 20px; /* Smaller logo text */
+    }
+    
+    .navbar_menu a {
+        font-size: 14px; /* Smaller menu text */
+    }
+    
+    .flexbox {
+        padding-bottom: 50px; /* Less bottom padding */
+        gap: 10px; /* Smaller gaps */
+    }
+    
+    .flexbox p {
+        font-size: 16px !important; /* Smaller text */
+        line-height: 1.5;
+        padding: 0 10px; /* Add side padding */
+    }
+    
+    .title-with-icon p {
+        font-size: 35px !important; /* Smaller heading */
+    }
+    
+    .section-text p {
+        font-size: 16px !important; /* Smaller section text */
+    }
+    
+    .panda-no-gif {
+        max-width: 200px; /* Even smaller on mobile */
+    }
+    
+    .cart-gif {
+        max-width: 150px; /* Even smaller on mobile */
+    }
+    
+    .bubbles-png {
+        width: 45px; /* Smaller logo */
+        height: 45px;
+    }
+    
+    .social-icons {
+        gap: 15px; /* Smaller gaps between icons */
+        margin-top: 30px;
+    }
+    
+    .social-icon {
+        width: 22px; /* Smaller social icons */
+        height: 22px;
+    }
+}
 
 
 
