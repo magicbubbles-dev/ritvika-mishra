@@ -235,6 +235,33 @@ body {
     margin-top: 30px; /* Add space above the GIF */
 }
 
+/* Music player styles */
+.music-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.music-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.music-btn.playing {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 /*styles for index file ends here*/
 /*styles for random page ends here*/
 /*styles for work page ends here*/

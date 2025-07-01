@@ -12,8 +12,15 @@
         <div class="logo-section">
             <img src="bubbles.png" alt="Bubbles" class="bubbles-png">
             <a href="index.html">magicBubbles</a>
+            <button id="musicToggle" class="music-btn" title="Toggle Music">🎵</button>
         </div>
     </header>
+    
+    <!-- Hidden audio element -->
+    <audio id="backgroundMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     
     <main class="art-main">
         <div class="content-layout">
@@ -41,4 +48,7 @@
         </div>
     </main>
 </body>
+
+<script src="music-player.js"></script>
+
 </html>

@@ -18,8 +18,15 @@
                 <a href="work.html">Works</a>
                 <a href="blog.html">Blogs</a>
                 <a href="random.html">Random</a>
+                <button id="musicToggle" class="music-btn" title="Toggle Music">🎵</button>
             </div>
         </header>
+        
+        <!-- Hidden audio element -->
+        <audio id="backgroundMusic" loop>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <main>
             <div class="content">
                 <div class="flexbox">
@@ -69,6 +76,9 @@
         </main>
     </div>
 </body>
+
+<script src="music-player.js"></script>
+
 </html>
 
 
